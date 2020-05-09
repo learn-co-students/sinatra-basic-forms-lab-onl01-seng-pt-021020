@@ -1,9 +1,58 @@
-<form method="post" action="/puppy">
-  <label for="name"> Puppy Name</label>
-  <input type="text" id="name" name="name">
-  <label for="breed"> Puppy Breed</label>
-  <input type="text" id="breed" name="breed">
-  <label for="age"> Puppy Age</label>
-  <input type="text" id="age" name="age">
-  <input type="submit" value="submit">
-</form>
+<%# <%# <h1>Create Puppy</h1>
+<form method="post" action="/">
+  <label for="name">Enter name: </label>
+  <input type="text" name="name" id="name"><br>
+  <label for="breed">Enter Breed: </label>
+  <input type="text" name="breed" id="breed"><br>
+  <label for="age">Enter age: </label>
+  <input type="text" name="age" id="age"><br>
+  <input type="submit" value="submit" id="submit">
+</form> %>
+<%# 
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet Adoption Center</title>
+  </head>
+  <body>
+  <form action="/new" method="post">
+    <h1>Please tell us about your dog</h1>
+    <div>
+      <label for="name">Puppy Name:</label>
+      <input name="name" type="text" id="name">
+    </div>
+    <div>
+      <label for="breed">Puppy Breed:</label>
+      <input name="breed" type="text" id="breed">
+    </div>
+    <div>
+      <label for="age">Puppy Age:</label>
+      <input name="age" type="text" id="age">
+    </div>    
+    <input type="submit" id="submit">
+  </form>
+
+  </body>
+</html> %>
+  
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/new" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="breed">Breed:</label>
+        <input type="text" name="breed" id="breed">
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age">
+        <input type="submit" name="" id="submit">
+    </form>
+</body>
+</html>
