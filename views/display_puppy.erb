@@ -1,5 +1,30 @@
+<%# <!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet Adoption Center</title>
+  </head>
+  <body>
+    <h1>Dog for adoption</h1>
+    <div>Puppy Name: <%="#{@name}"%></div>
+    <%# <div>Puppy Breed: <%="#{@breed}"%></div>
+    <%# <div>Puppy Age: <%="#{@age}"%></div> 
+  <%# </body>
+</html>  %> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
 <body>
-  <p>Puppy Name: <%= @puppy.name %></p>
-  <p>Puppy Breed: <%= @puppy.breed %></p>
-  <p>Puppy Age: <%= @puppy.age %> months</p>
+    <h2>Puppy Name:<%="\n" + @puppy.name%></h2>
+    <h4>Puppy Breed:<%= "\n" + @puppy.breed%></h4>
+    <h4>Puppy Age:<%= "\n" + @puppy.age%></h4>
+    <p><a href="/">Retrun Home</a></p>
 </body>
+</html>
+    

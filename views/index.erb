@@ -1,3 +1,33 @@
-<h1> Welcome to the puppy adoption site!</h1>
 
-<a href="/new">List A Puppy</a>
+
+
+
+<%# <h1> Welcome to the puppy adoption site!</h1>
+
+<a href="/new">List A Puppy</a> %>
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the Puppy Adoption Site!</h1>
+    <p><a href="/new">Click Here To List A Puppy</a></p>
+    <ul>
+        <% if Puppy.all.length > 1%>
+        <p>All puppies:</p>
+        <%end%>
+        
+        <% Puppy.all.each do |p|%>
+        <li>
+            <%= p.name%>: <%= p.breed%>, <%= p.age%>
+        </li>
+        <%end%>
+    </ul>
+</body>
+</html>
